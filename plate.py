@@ -4,8 +4,8 @@ import requests
 import numpy as np
 
 # Configuration
-IP_CAMERA_URL = "http://192.168.0.102:8080/video"  # Replace with your IP cam URL
-FLASK_SERVER_URL = "http://192.168.0.104:5000/entry"  # Flask server IP
+IP_CAMERA_URL = "http://<ip camera ip>:8080/video"  # Replace with your IP cam URL
+FLASK_SERVER_URL = "http://<server ip>:5000/entry"  # Flask server IP
 PLATE_REGION_COLOR = (0, 255, 0)  # Green box around plate
 TEXT_COLOR = (0, 255, 255)  # Yellow text
 MIN_CONFIDENCE = 0.5  # OCR confidence threshold
