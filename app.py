@@ -8,13 +8,13 @@ import re
 app = Flask(__name__)
 
 # === Supabase Configuration ===
-SUPABASE_URL = "https://elsrdfggcsfotcntlawf.supabase.co".strip()
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVsc3JkZmdnY3Nmb3RjbnRsYXdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxNTM0MzgsImV4cCI6MjA2NzcyOTQzOH0.OzahTapdw7oxj2nJAp3MDmcT97hcdibDvsfKIqZMmYM".strip()
+SUPABASE_URL = "<project url>.supabase.co".strip()
+SUPABASE_KEY = "supabase key"
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # === ESP32 IP Address ===
-ESP32_IP = "http://192.168.0.111"  # Must match actual ESP32 IP
+ESP32_IP = "http://<ESP IP>"  # Must match actual ESP32 IP
 
 # === Helper: Generate Booking ID ===
 def generate_booking_id():
