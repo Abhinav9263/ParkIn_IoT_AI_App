@@ -239,7 +239,7 @@
             `;
             
             try {
-                const response = await fetch('http://192.168.0.104:5000/api/booking_status');
+                const response = await fetch('http://<server ip>:5000/api/booking_status');
                 const data = await response.json();
                 
                 if (data.success && data.bookings && data.bookings.length > 0) {
