@@ -5,11 +5,11 @@
 #include <ESPAsyncWebServer.h>
 
 // WiFi Credentials
-const char* ssid = "TP-Link_EA52";          // Replace with your WiFi SSID
-const char* password = "71063508";  // Replace with your WiFi password
+const char* ssid = "SSID";          // Replace with your WiFi SSID
+const char* password = "Password";  // Replace with your WiFi password
 
 // Flask Server URL
-const String FLASK_SERVER = "http://192.168.0.104:5000/update_slot";  // Replace with your Flask server IP
+const String FLASK_SERVER = "http://<server ip>:5000/update_slot";  // Replace with your Flask server IP
 
 // Supabase Direct URL (Optional - for direct Supabase communication)
 // const String SUPABASE_URL = "https://your-supabase-url.supabase.co/rest/v1/bookings?select=*";
